@@ -1,11 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./Components/Header";
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        wefewf
+        <Header />
       </div>
     );
   }
