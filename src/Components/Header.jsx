@@ -1,15 +1,19 @@
 import React from "react";
-import styled from "styled-components";
+import { withStyles } from "@material-ui/core/styles";
+
+const styles = {
+  header: {
+    textAlign: "center"
+  }
+};
 
 const Header = props => {
-  const Title = styled.h3`
-    text-align: center;
-  `;
+  const { classes } = props;
   return (
     <div>
-      <Title>User list</Title>
+      <h3 className={classes.header}>User list test task</h3>
     </div>
   );
 };
 
-export default Header;
+export default withStyles(styles)(Header);
